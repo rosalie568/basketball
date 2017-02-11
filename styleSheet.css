@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:50px 0px; padding:0px;
+	text-align:center;
+	}
+body, .login-submit, .login-submit:before, .login-submit:after {
+  background-image: url(IMG_0729.JPG);) 0 0 repeat;
+#Content {
+
+	background-size:cover;
+	text-align:center;
+	background-color:#900;
+	background-image: url(IMG_0729.JPG);
+	background-size:100% 100%;
+}
+h2{
+  color:#F00;	
+}
+.login {
+  position: relative;
+  margin: 80px auto;
+  width: 600px;
+  padding-right: 32px;
+  font-weight: 300;
+  color: #a8a7a8;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+}
+.login p {
+  margin: 0 0 10px;
+}

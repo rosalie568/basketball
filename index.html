@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="UTF-8">
+		<!--Code added for mobile view-->
+		<meta name="viewport" content="width=device-width, initial-scale=2" /> 
+		<meta name="viewport" content="width=device-height, initial-scale=0.5"/>
+		<!--end of that code-->
+		<title>BALL MAJORS</title>
+		<link rel="stylesheet" type="text/css" href="mainStyleSheet.css" />
+		<script type="text/javaScript" src="mainJavaScript.js"> </script>
+		<style>
+			.header{
+				position: absolute;
+				top: calc(50% - 35px);
+				left: calc(40% - 255px);
+				z-index: 2;
+			}
+			.login{
+				position: absolute;
+				top: calc(50% - 75px);
+				left: calc(40% - 50px);
+				height: 150px;
+				width: 350px;
+				padding: 10px;
+				z-index: 2;
+			}
+		</style>
+	</head>
+	<body>
+
+	  <div class="body"></div>
+			<div class="grad"></div>
+			<div class="header">
+				<div>Ball <span>Majors</span></div>
+			</div>
+			<br>
+			<div class="login">
+				<form action="index-next.php" method="post">
+				<table>
+					<tr>
+						<th> <h2> Email: </h2>	</th>
+						<td><input type="text" placeholder="Email" name="email" id="email" onchange="emailcheck()"><br> </td>
+					</tr>
+					<tr>
+						<th> <h2> Password: </h2> </th>
+						<td> <input type="password" placeholder="Password" name="password" id="password"><br> </td>
+					</tr>
+					<tr>
+						<td> </td>
+						<td><button type="submit" value="submit" name="submit" id="submit">Login</button>	</td>
+					</tr>
+				</form>
+					<tr>
+						<td> </td>
+						<td><a href="signUp.html"> <input type="button" value="Create New Account"> </a> </td>		
+					</tr>		
+				</table>
+			</div>
+
+	</body>
+</html>

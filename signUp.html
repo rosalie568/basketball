@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--Code added for mobile view-->
+		<meta name="viewport" content="width=device-width, initial-scale=2" /> 
+		<meta name="viewport" content="width=device-height, initial-scale=0.5"/>
+		<!--end of that code-->
+		<title>BALL MAJORS</title>
+		<link rel="stylesheet" type="text/css" href="mainStyleSheet.css" />
+		<script type="text/javaScript" src="mainJavaScript.js"> </script>
+		<style>
+			.header{
+				position: absolute;
+				top: calc(50% - 35px);
+				left: calc(40% - 255px);
+				z-index: 2;
+			}
+			.login{
+				position: absolute;
+				top: calc(30% - 75px);
+				left: calc(40% - 50px);
+				height: 150px;
+				width: 350px;
+				padding: 10px;
+				z-index: 2;
+			}
+		</style>
+	</head>
+	<body>		
+		<div class="body"></div>
+			<div class="grad"></div>
+			<div class="header">
+				<div>Ball <span>Majors</span></div>
+			</div>
+			
+			<br>
+			<div class="login">
+				<form action="signUp-next.php" method="post">
+					<table>
+						<tr>
+							<td> <h2> First Name: </h2> </td>
+							<td>
+								<input type="text" placeholder="First Name" name="firstName" id="firstName" onchange="firstnamecheck()"><br>
+								<div class="warning">
+									<p id="demo"></p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td> <h2> Last Name: </h2> </td>
+							<td>	
+								<input type="text" placeholder="Last Name" name="lastName" id="lastName" onchange="lastnamecheck()"><br>
+								<div class="warning">
+									<p id="demo1"></p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td> <h2> Password: </h2> </td>
+							<td>
+								<input type="password" placeholder="Password" name="password" id="password"><br>
+							</td>
+						</tr>
+						<tr>
+							<td> <h2> Confirm Password: </h2> </td>
+							<td>
+								<input type="password" placeholder="Confirm your password" name="passwordConf" id="passwordConf" onchange="passwordcheck()"><br>
+								<div class="warning">
+									<p id="demo6"></p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td> <h2> Email </h2> </td>
+							<td>
+								<input type= "text" placeholder="Email address" name="email" id="email" onchange="emailcheck()"><br>	 
+								<div class="warning">
+									<p id="demo4"></p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td> <h2> Phone Number: </h2> </td>
+							<td> <input type="text" placeholder="PhoneNumber xxx xxx-xxxx" name="phoneNum" id="phoneNum" onchange="phonenumbercheck()"><br>
+								<div class="warning">
+									<p id="demo5"></p>
+								</div>
+							</td>
+						</tr>
+							<td> </td>
+							<td> <button type="submit" value="register" name="register" id="register">Register</button>	</td>
+						</tr>
+					</table>
+				</form>
+		</div>
+	</body>
+</html>
