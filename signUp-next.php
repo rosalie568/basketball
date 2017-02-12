@@ -1,11 +1,11 @@
 <?php
-		/*
+
 			include 'include.php';		//get values for database
 
 			//get values from signUp.html form
 			$password = $_POST['password'];
 			$email = $_POST['email'];
-
+		/*
 			$db = mysql_connect($dbhost, $dbuser, $dbpass);		//connect to database
 
 			//prints message if any connect to mySQL
