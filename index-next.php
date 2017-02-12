@@ -7,23 +7,6 @@
 			$password = $_POST['password'];
 			$email = $_POST['email'];
 
-		/*
-			$db = mysql_connect($dbhost, $dbuser, $dbpass);		//connect to database
-
-			//prints message if any connect to mySQL
-			if (!$db) {
-				 echo "Error - Could not connect to MySQL";
-				 exit;
-			}
-
-			//prints message if cant connect to my user name database
-			$er = mysql_select_db($dbuser); // in your local host
-			if (!$er) {
-			print "Error - Could not select the cars database";
-			exit;
-			}
-		*/
-
 			function SignIn()
 			{
 				session_start();   //starting the session for user profile page
