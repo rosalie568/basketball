@@ -1,6 +1,6 @@
 <?php
-	session_start();   //starting the session for user profile page
-	
+
+
 	include 'include.php';		//get values for database
 
 	//get values from signUp.html form
@@ -10,23 +10,13 @@
 	$con = mysql_connect($dbhost, $dbuser, $dbpass);
 	mysql_select_db($dbname) or die( 'error connecting to database' );
 
-	//prints message if cant connect to my user name database
-	/*
-	$er = mysqli_select_db($con, $dbname); // in your local host
-	if (!$er) {
-	print "Error - Could not select the user database";
-	exit;
-	} */
-
 	function SignIn()
 	{
-
+		session_start();   //starting the session for user profile page
 		if(!empty($_POST['email']) && !empty($_POST['password']) )   //checking the 'user' name which is from Sign-In.html, is it empty or have some text
 		{
 			$query = mysql_query("SELECT *  FROM student where email = '$_POST[email]' AND password = '$_POST[password]'") ;
 			$row = mysql_fetch_array($query);
-
-			print $row;
 
 			if(!empty($row['email']) AND !empty($row['password']))
 			{
@@ -35,10 +25,10 @@
 
 				//check if status is a student
 				if($row['status'] == "student")
-				header("Location: first.php");
+					header("Location: first.php");
 				//checks if status is an admin
 				else
-				header("Location: adminFirst.html");
+					header("Location: adminFirst.html");
 			}
 			else
 			{

@@ -1,9 +1,9 @@
 <?php
 	include 'include.php';		//get values for database
 
-	//get values from signUp.html form
-	$password = $_POST['password'];
-	$email = $_POST['email'];
+	$con = mysql_connect($dbhost, $dbuser, $dbpass);
+	mysql_select_db($dbname) or die( 'error connecting to database' );
+
 	function SignUp()
 	{
 		//get values from signUp.html form
