@@ -46,7 +46,7 @@
 						<tr>
 							<td colspan="2">
 								<select name="location">
-								  <option value="">--Select a location--</option>
+								  <option value="0">--Select a location--</option>
 								  	<?php
 
 										//search query for locations
@@ -56,7 +56,7 @@
 										while($row = mysql_fetch_array($locations) )
 										{
 									?>
-									  <option value="<?php echo $row['gameLocation']?>"> <?php echo $row['gameLocation']?> </option>
+									  <option value="<?php echo $row['id']?>"> <?php echo $row['gameLocation']?> </option>
 
 									<?php
 											;

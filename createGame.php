@@ -9,13 +9,11 @@
 	$getTime = $_POST['getTime'];
 	$location = $_POST['location'];
 
-	echo $getTime;
-
 	//check if Date and time of game is set
 	if(!empty($getTime) )
 	{
 		//check if location is set
-		if($location != "")
+		if($location != "0")
 		{
 			$myEmail = $_SESSION['email'];	//email from the session
 
