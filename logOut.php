@@ -1,7 +1,7 @@
 <?php
-
+	session_start();
 	session_destroy();		//destroy session
-	
+
 	//delete cookie for location
 	if(isset($_COOKIE['location'])) {
 		  unset($_COOKIE['location']);

@@ -29,11 +29,12 @@ function phonenumbercheck()
 		alert("Invaild Input \n Input Should Be xxx xxx-xxxx " );
 	}
 }
+
 function passwordcheck()
 {
 	var x = document.getElementById("password").value;
 	var y = document.getElementById("passwordConf").value;
 	if(y!=x){
-		alert("Password did not match ") 
+		alert("Password did not match ")
 	}
 }

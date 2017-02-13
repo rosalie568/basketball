@@ -1,6 +1,5 @@
 <?php
 
-
 	include 'include.php';		//get values for database
 
 	//get values from signUp.html form
