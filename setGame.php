@@ -41,7 +41,7 @@
 					<table>
 						<tr>
 							<td> <h3>Date and Time: </h3> </td>
-							<td><input type="datetime-local" class="some_class" id="some_class_1" name="getTime" /> </td>
+							<td><input type="datetime-local" name="getTime" /> </td>
 						</tr>
 						<tr>
 							<td colspan="2">
