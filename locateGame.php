@@ -47,8 +47,8 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=2" />
 		<meta name="viewport" content="width=device-height, initial-scale=0.5"/>
-		<link rel="stylesheet" type="text/css" href="./jquery.datetimepicker.css"/>
-		<link rel="stylesheet" type="text/css" href="mainStyleSheet.css" />
+		<link rel="stylesheet" type="text/css" href="js/jquery.datetimepicker.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mainStyleSheet.css" />
 
 		<script type="text/javascript">
 			function join_id(id)

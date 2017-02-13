@@ -56,7 +56,7 @@
 										while($row = mysql_fetch_array($locations) )
 										{
 									?>
-									  <option value="<?php echo $row['id']?>"> <?php echo $row['gameLocation']?> </option>
+									  <option value="<?php echo $row['gameLocation']?>"> <?php echo $row['gameLocation']?> </option>
 
 									<?php
 											;
