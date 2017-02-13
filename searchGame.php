@@ -13,7 +13,8 @@
 	<body>
 		<div class="body"></div>
 		<div class="container">
-			<a href="logOut.php" class="button"><span><?php
+			<a href="logOut.php" class="button"><span>
+				<?php
 						include 'include.php';		//get values for database
 
 						$con = mysql_connect($dbhost, $dbuser, $dbpass);
@@ -26,8 +27,10 @@
 
 						$row2 = mysql_fetch_array($check);
 
-						echo $row2['firstName'];?>
+						echo $row2['firstName'];
+				?>
 						</span>Sign Out</a>
+
 			<div class="grad"></div>
 
 			<div class="header">
@@ -38,9 +41,21 @@
 				<form action="viewGame.php" method="post">
 					<select name="location">
 					  <option value="">--Select a location--</option>
-					  <option value="Murphy Center">Murphy Center</option>
-					  <option value="Murfreesboro YMCA">Murfreesboro YMCA</option>
-					  <option value="Patterson Park Community Center">Patterson Park Community Center</option>
+					  <?php
+
+						  //search query for locations
+						  $locations = mysql_query("
+							  SELECT * FROM gameLocations ") ;
+
+						  while($row = mysql_fetch_array($locations) )
+						  {
+					  ?>
+						<option value="<?php echo $row['gameLocation']?>"> <?php echo $row['gameLocation']?> </option>
+
+					  <?php
+							  ;
+						  }
+					  ?>
 					</select>
 					<button type="submit" value="create" name="create" id="create">Search For a Game</button>	<p>
 				</form>
