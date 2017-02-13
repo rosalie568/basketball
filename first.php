@@ -39,10 +39,8 @@
 					<?php
 						include 'include.php';		//get values for database
 
-						$db = mysql_connect($dbhost, $dbuser, $dbpass);		//connect to database
-
-						//prints message if cant connect to my user name database
-						$er = mysql_select_db($dbuser); // in your local host
+						$con = mysql_connect($dbhost, $dbuser, $dbpass);
+						mysql_select_db($dbname) or die( 'error connecting to database' );
 
 						$check = mysql_query("
 							SELECT *
