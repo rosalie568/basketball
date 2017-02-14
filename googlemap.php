@@ -47,21 +47,9 @@
 			</div>
 			<br>
 			<div class="login">
-				<?php
-
-					//search query for locations
-					$locations = mysql_query("
-						SELECT * FROM gameLocations ") ;
-
-					while($row = mysql_fetch_array($locations) )
-					{
-				?>
-				  <a href="firstplace.php"> <input type="button" value="<?php echo $row['gameLocation'] ?>" /> </a>
-
-				<?php
-						;
-					}
-				?>
+				  <a href="firstplace.php"> <input type="button" value="Tilles Park" /> </a>
+				  <a href="secondplace.php"> <input type="button" value="Conway Park" /> </a>
+				  <a href="thirdplace.php"> <input type="button" value="C4 Competitive Park" /> </a>
 
 			</div>
 

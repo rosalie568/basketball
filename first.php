@@ -63,7 +63,7 @@
 			<div class="login">
 
 				<a href="setGame.php" >		<input type="button" value="Create A Game"></a>
-				<a href="searchGame.php" >		<input type="button" value="Join A Game"></a>
+				<a href="searchGame.php" >  <input type="button" value="Join A Game"></a>
 				<a href="myGame.php" >		<input type="button" value="View My Game"></a>
 				<a href="googlemap.php" >	<input type="button" value="Directions To The Game"></a>
 			</div>
