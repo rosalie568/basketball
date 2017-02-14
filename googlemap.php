@@ -4,10 +4,9 @@
 
 	include 'include.php';		//get values for database
 
-	$db = mysql_connect($dbhost, $dbuser, $dbpass);		//connect to database
+	$con = mysql_connect($dbhost, $dbuser, $dbpass);
+	mysql_select_db($dbname) or die( 'error connecting to database' );
 
-	//prints message if cant connect to my user name database
-	$er = mysql_select_db($dbuser); // in your local host
 ?>
 <html>
 	<head>
@@ -48,12 +47,23 @@
 			</div>
 			<br>
 			<div class="login">
+				<?php
 
+					//search query for locations
+					$locations = mysql_query("
+						SELECT * FROM gameLocations ") ;
 
-				<a href="firstplace.php" >		<input type="button" value="MTSU Campus Recreation"></a>
-				<a href="secondplace.php" > <input type="button" value="YMCA of Middle Tennessee">
-			<a href="thirdplace.php" >	<input type="button" value="Patterson Park Community">
-</a>			</div>
+					while($row = mysql_fetch_array($locations) )
+					{
+				?>
+				  <a href="firstplace.php"> <input type="button" value="<?php echo $row['gameLocation'] ?>" /> </a>
+
+				<?php
+						;
+					}
+				?>
+
+			</div>
 
 	</body>
 </html

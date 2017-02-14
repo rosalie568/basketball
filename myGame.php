@@ -53,19 +53,23 @@
 
 		<div class="body"></div>
 		<div class="container">
-		<a href="logOut.php" class="button"><span>
-					<?php
+			<a href="" class="button>"> Hi
+			</a>
+			<a href="logOut.php" class="button">
+				<span>
+						<?php
 
-						$check = mysql_query("
-							SELECT *
-							FROM  student
-							WHERE email = '" . mysql_real_escape_string($_SESSION['email']) . "' ") ;
+							$check = mysql_query("
+								SELECT *
+								FROM  student
+								WHERE email = '" . mysql_real_escape_string($_SESSION['email']) . "' ") ;
 
-						$row2 = mysql_fetch_array($check);
+							$row2 = mysql_fetch_array($check);
 
-						echo $row2['firstName'];
-					?>
-				</span>Sign Out </a>
+							echo $row2['firstName'];
+						?>
+					</span>Sign Out </a>
+				</div>
 			<div class="grad"></div>
 
 			<div class="header">

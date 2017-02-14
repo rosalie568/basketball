@@ -32,26 +32,29 @@
 		</style>
 	</head>
 	<body>
-
 		<div class="body"></div>
+
 			<div class="container">
-			<a href="logOut.php" class="button"><span>
-					<?php
-						include 'include.php';		//get values for database
+				<a href="logOut.php" class="button">
+					<span>
+						<?php
+							include 'include.php';		//get values for database
 
-						$con = mysql_connect($dbhost, $dbuser, $dbpass);
-						mysql_select_db($dbname) or die( 'error connecting to database' );
+							$con = mysql_connect($dbhost, $dbuser, $dbpass);
+							mysql_select_db($dbname) or die( 'error connecting to database' );
 
-						$check = mysql_query("
-							SELECT *
-							FROM  student
-							WHERE email = '" . mysql_real_escape_string($_SESSION['email']) . "' ") ;
+							$check = mysql_query("
+								SELECT *
+								FROM  student
+								WHERE email = '" . mysql_real_escape_string($_SESSION['email']) . "' ") ;
 
-						$row2 = mysql_fetch_array($check);
+							$row2 = mysql_fetch_array($check);
 
-						echo $row2['firstName'];
-					?>
-				</span>Sign Out </a>
+							echo $row2['firstName'];
+						?>
+					</span>Sign Out
+				</a>
+			</div>
 			<div class="grad"></div>
 			<div class="header">
 				<div>Make Your <br><span>selection</span></div>

@@ -20,7 +20,7 @@
 		background-size: cover;
 		background-position:center;
 		-webkit-filter: blur(0px);
-				
+
 }
 
 .header{
@@ -123,14 +123,14 @@ color:red;
 		opacity: 0.9;
 }
 
-.login input[type=text]:focus{		
+.login input[type=text]:focus{
 		border: 1px solid rgba(255,255,255,0.9);
 }
 
-.login input[type=password]:focus{				
+.login input[type=password]:focus{
 		border: 1px solid rgba(255,255,255,0.9);
 }
-			
+
 ::-webkit-input-placeholder{
 		color: rgba(255,255,255,0.8);
 }
@@ -138,7 +138,7 @@ color:red;
 ::-moz-input-placeholder{
 		color: rgba(255,255,255,0.8);
 }
-		
+
 .exit:after {
 		content: '';
 		position: absolute;
@@ -148,72 +148,76 @@ color:red;
 		transition: all 0.3s;
 }
 
-.container { width: 600px; text-align: center; margin: auto;}
+.container {
+	width: 600px;
+	text-align: center;
+	margin: auto;
+}
 
-		.login input[type=button]{
-				width: 260px;
-				height: 90px;
-				background: white;
-				border: 1px solid #fff;
-				cursor: pointer;
-				border-radius: 2px;
-				color: #a18d6c;
-				font-family: 'Exo', sans-serif;
-				font-size: 16px;
-				font-weight: 400;
-				padding: 6px;
-				margin-top: 10px;
-			}
+.login input[type=button]{
+	width: 260px;
+	height: 90px;
+	background: white;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
 
-			.login input[type=button]:active{
-				opacity:10;
-			}
+.login input[type=button]:active{
+	opacity:10;
+}
 .button {
-		display: inline-block;
-		height: 50px;
-		line-height: 50px;
-		padding-right: 30px;
-		padding-left: 70px;
-		position: relative;
-	  
-		color: black;
-		text-decoration: none;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		margin-bottom: 15px;
-		background-color:white;
-		position:absolute;
-		top: 20px;
-		right: 20px;
-  		width: 170px;
-		border-radius: 5px;
-		-moz-border-radius: 5px;
-		-webkit-border-radius: 5px;
-		text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	padding-right: 30px;
+	padding-left: 70px;
+	position: relative;
+
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+	background-color:white;
+	position:absolute;
+	top: 20px;
+	right: 20px;
+	width: 170px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-shadow:0px 1px 0px rgba(0,0,0,0.5);
 }
 option {
-  background-color: black;
+	background-color: black;
 }
 .select {
-		display: inline-block;
-		height: 50px;
-		line-height: 50px;
-		padding-right: 30px;
-		padding-left: 70px;
-		position: relative;
-	  	  background:#4b2d15 !important;
-		color: black;
-			text-transform: uppercase;
-		letter-spacing: 2px;
-		margin-bottom: 15px;
-		position:absolute;
-		top: 20px;
-		right: 20px;
-  		width: 170px;
-		border-radius: 5px;
-		-moz-border-radius: 5px;
-		-webkit-border-radius: 5px;
-		text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	padding-right: 30px;
+	padding-left: 70px;
+	position: relative;
+	background:#4b2d15 !important;
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+	position:absolute;
+	top: 20px;
+	right: 20px;
+	width: 170px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-shadow:0px 1px 0px rgba(0,0,0,0.5);
 }
 
 
@@ -222,7 +226,7 @@ option {
 		left: 0;
 		width: 100px;
 		background-color:rgba(0,0,0,0.5);
-  
+
 		-webkit-border-top-left-radius: 5px;
 		-webkit-border-bottom-left-radius: 5px;
 		-moz-border-radius-topleft: 5px;
@@ -248,7 +252,7 @@ option {
 		margin-bottom: 13px;
 
 		box-shadow:2px 1px 0px rgba(255,255,255,0.5);
-}	
+}
 table a:link {
 	color: #666;
 	font-weight: bold;
@@ -312,7 +316,7 @@ table tr {
 	text-align: left;
 	padding-left:20px;
 	border-left: 0;
-} 
+}
 .t table td {
 	padding:18px;
 	border-top: 1px solid #ffffff;
@@ -344,5 +348,22 @@ table tr {
 .t table tr:hover td {
 	background: #f2f2f2;
 	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
-	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);	
-}	
+	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}

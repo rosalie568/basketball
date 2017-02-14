@@ -87,7 +87,6 @@
 <div class="t" >
 				<table border>
 					<tr>
-						<th><h2>Id </h2></th>
 						<th><h2>Time </h2></th>
 						<th><h2>Location </h2></th>
 						<th><h2># Players Registered </h2></th>
@@ -118,7 +117,6 @@
 							if( $row4['gameId'] != $row['gameId'] )
 							{
 									echo "<tr>";
-										echo "<td>" . $row['gameId'] . "</td>";
 										echo "<td>" . $row['gameTime'] . "</td>";
 										echo "<td>" . $row['location'] . "</td>";
 										echo "<td>" . $row['playersRegistered'] . "</td>";
