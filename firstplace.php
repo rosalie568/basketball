@@ -42,21 +42,9 @@
 			</div>
 			<center>
 
-				<div id="googleMap" style="width:100%;height:400px;"></div>
+			<br><br><br><br><br><br><br>
 
-				<script>
-			function myMap() {
-			var mapProp= {
-			    center:new google.maps.LatLng(51.508742,-0.120850),
-			    zoom:5,
-			};
-			var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-			}
-			</script>
-
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnFdsxMvi_VzLp9Pe6Cje9Fuo3V6J7Zqc&callback=myMap"></script>
-			<br><br><br><br><br><br>
-
+			<div id="googleMap" style="width:50%;height:400px;"></div>
 
 			<div class="grad"></div>
 			<div class="header">
@@ -64,6 +52,18 @@
 			</div>
 		</center>
 	</div>
+
+	<script>
+		function myMap() {
+		var mapProp= {
+			center:new google.maps.LatLng(51.508742,-0.120850),
+			zoom:5,
+		};
+		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		}
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnFdsxMvi_VzLp9Pe6Cje9Fuo3V6J7Zqc&callback=myMap"></script>
 
 	</body>
 
