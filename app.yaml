@@ -22,3 +22,7 @@ handlers:
 
 - url: /.*
   script: index.html
+
+instance_class: B8
+manual_scaling:
+  instances: 5

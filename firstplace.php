@@ -41,26 +41,21 @@
 				</a>
 			</div>
 			<center>
+
+				<div id="googleMap" style="width:100%;height:400px;"></div>
+
+				<script>
+			function myMap() {
+			var mapProp= {
+			    center:new google.maps.LatLng(51.508742,-0.120850),
+			    zoom:5,
+			};
+			var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+			}
+			</script>
+
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnFdsxMvi_VzLp9Pe6Cje9Fuo3V6J7Zqc&callback=myMap"></script>
 			<br><br><br><br><br><br>
-
-
-			<div id="map" style="width:400px;height:400px;background:yellow"></div>
-
-<script>
-function myMap() {
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {
-    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
-  };
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-}
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOxG0tfSdwP0edBROnZHdbZgnLqaHqehA&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: http://www.w3schools.com/graphics/google_maps_basic.asp
--->
 
 
 			<div class="grad"></div>
@@ -69,5 +64,7 @@ Read more at: http://www.w3schools.com/graphics/google_maps_basic.asp
 			</div>
 		</center>
 	</div>
+
 	</body>
+
 </html>
