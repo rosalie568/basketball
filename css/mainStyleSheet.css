@@ -1,11 +1,15 @@
 ﻿body{
-		margin: 0;
-		padding: 0;
+		margin: 1;
+		padding: 1;
 		background: #000000;
 
 		color: #FFFFFF;
 		font-family: Arial;
 		font-size: 12px;
+
+		background-image: url(basketball.jpg);
+		-webkit-filter: blur(0px);
+
 }
 
 .body{
@@ -357,14 +361,28 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: black;
 }
 
 li {
-    float: right;
+    float: left;
 }
 
 li a {
     display: block;
-    padding: 8px;
-    background-color: #dddddd;
+    color: white;
+	background-color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
 }

@@ -37,8 +37,13 @@
 
 	</head>
 	<body>
-
-		<div class="body"></div>
+		<div class="navBar">
+			<ul>
+				<li><a href="adminFirst.html">Home</a></li>
+				<li><a class="active" href="deleteGame.php">Delete Game</a></li>
+				<li><a href="MinMax.html">Change # of Players</a></li>
+			</ul>
+		</div>
 		<div class="container">
 		<a href="logOut.php" class="button"><span>Admin </span>Sign Out</a>
 			<div class="grad"></div>
@@ -48,7 +53,7 @@
 			</div>
 			<br>
 			<div class="login">
-<div class= "t">
+				<div class= "t">
 				<table border>
 					<tr>
 						<th><h2>Id </h2></th>
