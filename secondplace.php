@@ -21,9 +21,9 @@
 
 	<body>
 	  <div class="body">
-		<div class="container">
-		<a href="logOut.php" class="button"><span>
-			<?php
+		  <div class="container">
+			  <a href="logOut.php" class="button"><span>
+				  <?php
 						include 'include.php';		//get values for database
 
 						$con = mysql_connect($dbhost, $dbuser, $dbpass);
@@ -36,18 +36,45 @@
 
 						$row2 = mysql_fetch_array($check);
 
-						echo $row2['firstName'];
-			?>
-						</span>Sign Out</a> </div>
-		<center>
-		<br><br><br><br><br><br>
-             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3233.948024299567!2d-86.43070399999999!3d35.850278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8863f7e561ebaacb%3A0xb313c9af97e39d9!2sRutherford+County+Family+YMCA!5e0!3m2!1sen!2sus!4v1430877733968" width="600" height="450" frameborder="0" style="border:0"></iframe>
-		<br><br><br><br><br><br>
-		<div class="grad"></div>
+						echo $row2['firstName'];?>
+						</span>Sign Out
+				</a>
+			</div>
+			<center>
+
+			<br><br><br><br><br><br><br>
+
+			<div id="googleMap" style="width:50%;height:400px;"></div>
+
+			<div class="grad"></div>
 			<div class="header">
 
 			</div>
 		</center>
 	</div>
+
+	<script>
+		function myMap() {
+			var myLatlng = new google.maps.LatLng(38.6488, -90.4508 );
+			var mapProp= {
+				center: myLatlng,
+				zoom: 15,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+
+			var marker = new google.maps.Marker({
+		        position: myLatlng,
+		        map: map,
+	        	title:"Hello World!"
+	    	});
+
+		}
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnFdsxMvi_VzLp9Pe6Cje9Fuo3V6J7Zqc&callback=myMap"></script>
+
 	</body>
+
 </html>

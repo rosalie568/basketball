@@ -21,9 +21,9 @@
 
 	<body>
 	  <div class="body">
-		<div class="container">
-		<a href="logOut.php" class="button"><span>
-			<?php
+		  <div class="container">
+			  <a href="logOut.php" class="button"><span>
+				  <?php
 						include 'include.php';		//get values for database
 
 						$con = mysql_connect($dbhost, $dbuser, $dbpass);
@@ -37,16 +37,44 @@
 						$row2 = mysql_fetch_array($check);
 
 						echo $row2['firstName'];?>
-						</span>Sign Out</a> </div>
-		<center>
-		<br><br><br><br><br><br>
-		<iframe src="https://www.google.com/maps/place/Tilles+Park/@38.6208212,-90.3672158,17z/data=!3m1!4b1!4m5!3m4!1s0x87d8b59aa63e7c95:0x85b2512e6e2ae27b!8m2!3d38.6208212!4d-90.3650271" width="600" height="450" frameborder="0" style="border:0"></iframe>
-		<br><br><br><br><br><br>
-		<div class="grad"></div>
+						</span>Sign Out
+				</a>
+			</div>
+			<center>
+
+			<br><br><br><br><br><br><br>
+
+			<div id="googleMap" style="width:50%;height:400px;"></div>
+
+			<div class="grad"></div>
 			<div class="header">
 
 			</div>
 		</center>
 	</div>
+
+	<script>
+		function myMap() {
+			var myLatlng = new google.maps.LatLng(38.6506, -90.4669);
+			var mapProp= {
+				center: myLatlng,
+				zoom: 15,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+
+			var marker = new google.maps.Marker({
+		        position: myLatlng,
+		        map: map,
+	        	title:"Hello World!"
+	    	});
+
+		}
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnFdsxMvi_VzLp9Pe6Cje9Fuo3V6J7Zqc&callback=myMap"></script>
+
 	</body>
+
 </html>

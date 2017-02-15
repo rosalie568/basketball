@@ -55,10 +55,10 @@
 
 	<script>
 		function myMap() {
-			var myLatlng = new google.maps.LatLng(38.6208212, -90.3672158);
+			var myLatlng = new google.maps.LatLng(38.6208212, -90.3672158 );
 			var mapProp= {
 				center: myLatlng,
-				zoom:10,
+				zoom: 15,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			};
 			var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
