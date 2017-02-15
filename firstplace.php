@@ -55,11 +55,21 @@
 
 	<script>
 		function myMap() {
-		var mapProp= {
-			center:new google.maps.LatLng( 38.6208212, -90.3672158 ),
-			zoom:25,
-		};
-		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+			var myLatlng = new google.maps.LatLng(38.6208212, -90.3672158);
+			var mapProp= {
+				center: myLatlng,
+				zoom:10,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+
+			var marker = new google.maps.Marker({
+		        position: myLatlng,
+		        map: map,
+	        	title:"Hello World!"
+	    	});
+
 		}
 	</script>
 
