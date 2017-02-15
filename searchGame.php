@@ -39,7 +39,7 @@
 			<br>
 			<div class="login">
 				<form action="viewGame.php" method="post">
-					<select name="location">
+					<select name="location" >
 					  <option value="">--Select a location--</option>
 					  <?php
 
