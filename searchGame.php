@@ -11,7 +11,15 @@
 		<link rel="stylesheet" type="text/css" href="css/mainStyleSheet.css" />
 	</head>
 	<body>
-		<div class="body"></div>
+		<div class="navBar">
+			<ul>
+				<li><a href="first.php">Home</a></li>
+				<li><a href="setGame.php">Create a Game</a></li>
+				<li><a class="active" href="searchGame.php">Join a Game</a></li>
+				<li><a href="myGame.php">View My Game</a></li>
+				<li><a href="googlemap.php">Directions to Game</a></li>
+			</ul>
+		</div>
 		<div class="container">
 			<a href="logOut.php" class="button"><span>
 				<?php

@@ -20,7 +20,13 @@
 	</head>
 
 	<body>
-	  <div class="body">
+		<div class="navBar">
+  		  <ul>
+  			  <li><a class="active" href="first.html">Home</a></li>
+  			  <li><a href="">Delete Game</a></li>
+  			  <li><a href="">Change # of Players</a></li>
+  		  </ul>
+  	  	</div>
 		  <div class="container">
 			  <a href="logOut.php" class="button"><span>
 				  <?php
