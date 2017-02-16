@@ -20,6 +20,10 @@ handlers:
 - url: /(.+)
   script: \1
 
+- url: /admin/.*
+  script: adminFirst.php
+  login: admin
+
 - url: /.*
   script: index.html
 
