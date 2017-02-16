@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
 	session_start();
 
@@ -31,6 +30,7 @@
 		header("Location: first.php");
 	}
 ?>
+<!DOCTYPE html>
 <html >
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
