@@ -1,5 +1,4 @@
-<?php
-	session_start();   //starting the session for user profile page
+<?php session_start();   //starting the session for user profile page
 
 	include 'include.php';		//get values for database
 
