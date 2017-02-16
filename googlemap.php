@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
 	session_start();
 
@@ -8,6 +7,7 @@
 	mysql_select_db($dbname) or die( 'error connecting to database' );
 
 ?>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
