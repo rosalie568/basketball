@@ -230,7 +230,7 @@ option {
 		position: absolute;
 		left: 0;
 		width: 100px;
-		background-color:rgba(0,0,0,0.5);
+		background-color: red;
 
 		-webkit-border-top-left-radius: 5px;
 		-webkit-border-bottom-left-radius: 5px;
@@ -242,7 +242,7 @@ option {
 }
 
 .button:hover span, .button.active span {
-		background-color:red;
+		background-color: #ddd;
 		border-right: 1px solid  rgba(0,0,0,0.3);
 }
 .selcet:active {
