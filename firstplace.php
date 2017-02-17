@@ -1,7 +1,8 @@
-<!DOCTYPE html>
 <?php
+	ini_set('max_execution_time', 20*60);
 	session_start();
 ?>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
