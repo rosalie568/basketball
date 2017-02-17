@@ -51,7 +51,7 @@
 			</div>
 			<center>
 
-			<br><br><br><br><br><br><br>
+			<br><br><br><br>
 			<center><h1>Tilles Park</h1></center>
 			<div id="googleMap" style="width:50%;height:400px;"></div>
 
