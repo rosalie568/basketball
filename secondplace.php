@@ -25,7 +25,7 @@
   		  <ul>
   			  <li><a href="first.php">Home</a></li>
   			  <li><a href="setGame.php">Create a Game</a></li>
-  			  <li><a class="active" href="searchGame.php">Join a Game</a></li>
+  			  <li><a href="searchGame.php">Join a Game</a></li>
   			  <li><a href="myGame.php">View My Game</a></li>
   			  <li><a href="googlemap.php">Directions to Game</a></li>
   		  </ul>
@@ -52,7 +52,7 @@
 			<center>
 
 			<br><br><br><br><br><br><br>
-
+			<center><h1>Conway Park</h1></center>
 			<div id="googleMap" style="width:50%;height:400px;"></div>
 
 			<div class="grad"></div>
