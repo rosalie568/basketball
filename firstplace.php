@@ -22,12 +22,14 @@
 
 	<body>
 		<div class="navBar">
-  		  <ul>
-  			  <li><a class="active" href="first.html">Home</a></li>
-  			  <li><a href="">Delete Game</a></li>
-  			  <li><a href="">Change # of Players</a></li>
-  		  </ul>
-  	  	</div>
+			<ul>
+				<li><a href="first.php">Home</a></li>
+				<li><a href="setGame.php">Create a Game</a></li>
+				<li><a href="searchGame.php">Join a Game</a></li>
+				<li><a href="myGame.php">View My Game</a></li>
+				<li><a href="googlemap.php">Directions to Game</a></li>
+			</ul>
+		</div>
 		  <div class="container">
 			  <a href="logOut.php" class="button"><span>
 				  <?php
