@@ -62,7 +62,7 @@
 		</center>
 	</div>
 
-	<script>
+	<script defer="defer">
 		function myMap() {
 			var myLatlng = new google.maps.LatLng(38.6506, -90.4669);
 			var mapProp= {

@@ -81,8 +81,8 @@
 				</form>
 			</div>
 		</body>
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery.datetimepicker.js"></script>
+	<script src="js/jquery.js" defer="defer"></script>
+	<script src="js/jquery.datetimepicker.js" defer="defer"></script>
 	<script>
 
 		$('#datetimepicker').datetimepicker({
