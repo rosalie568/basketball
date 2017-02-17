@@ -1,5 +1,7 @@
 <?php
 
+	ini_set('max_execution_time', 20*60);
+
 	include 'include.php';		//get values for database
 
 	//get values from signUp.html form
