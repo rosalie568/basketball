@@ -60,16 +60,10 @@
 					?>
 			</span>Sign Out </a>
 		</div>
-			<div class="container">
-
-			</div>
-			<div class="grad"></div>
 			<div class="header">
 				<div>Make Your <br><span>selection</span></div>
 			</div>
-			<br>
 			<div class="login">
-
 				<a href="setGame.php" >		<input type="button" value="Create A Game"></a>
 				<a href="searchGame.php" >  <input type="button" value="Join A Game"></a>
 				<a href="myGame.php" >		<input type="button" value="View My Game"></a>
