@@ -10,14 +10,6 @@
 		<meta name="viewport" content="width=device-height, initial-scale=0.5"/>
 		<title>BALL MAJORS</title>
 		<link rel="stylesheet" type="text/css" href="css/mainStyleSheet.css" />
-		<style>
-			.header{
-			position: absolute;
-			top: calc(70% - 35px);
-			left: calc(50% - 255px);
-			z-index: 5;
-			}
-		</style>
 	</head>
 
 	<body>
@@ -51,13 +43,7 @@
 			<br><br><br><br>
 			<center><h1>Tilles Park</h1></center>
 			<div id="googleMap" style="width:50%; height:400px;"></div>
-
-			<div class="grad"></div>
-			<div class="header">
-
-			</div>
-		</center>
-	</div>
+		</div>
 
 	<script>
 		function myMap() {

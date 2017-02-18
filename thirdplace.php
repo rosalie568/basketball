@@ -10,14 +10,6 @@
 		<meta name="viewport" content="width=device-height, initial-scale=0.5"/>
 		<title>BALL MAJORS</title>
 		<link rel="stylesheet" type="text/css" href="css/mainStyleSheet.css" />
-		<style>
-			.header{
-			position: absolute;
-			top: calc(70% - 35px);
-			left: calc(50% - 255px);
-			z-index: 5;
-			}
-		</style>
 	</head>
 
 	<body>
@@ -31,14 +23,19 @@
 	  		</ul>
 			<a href="logOut.php" class="button"><span>
 			<?php
-					  $check = mysql_query("
-							  SELECT *
-							  FROM  student
-							  WHERE email = '" . mysql_real_escape_string($_SESSION['email']) . "' ") ;
+				include 'include.php';		//get values for database
 
-						  $row2 = mysql_fetch_array($check);
+				$con = mysql_connect($dbhost, $dbuser, $dbpass);
+				mysql_select_db($dbname) or die( 'error connecting to database' );
 
-						  echo $row2['firstName'];
+				$check = mysql_query("
+					SELECT *
+					FROM  student
+					WHERE email = '" . mysql_real_escape_string($_SESSION['email']) . "' ") ;
+
+					$row2 = mysql_fetch_array($check);
+
+				echo $row2['firstName'];
 		  	?>
 			</span>Sign Out</a>
   	  	</div>
@@ -46,13 +43,7 @@
 			<br><br><br><br>
 			<center><h1>C4 Competitive Park</h1></center>
 			<div id="googleMap" style="width:50%;height:400px;"></div>
-
-			<div class="grad"></div>
-			<div class="header">
-
-			</div>
-		</center>
-	</div>
+		</div>
 
 	<script defer="defer">
 		function myMap() {
@@ -74,7 +65,7 @@
 		}
 	</script>
 
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnFdsxMvi_VzLp9Pe6Cje9Fuo3V6J7Zqc&callback=myMap"></script>
+	<script defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnFdsxMvi_VzLp9Pe6Cje9Fuo3V6J7Zqc&callback=myMap"></script>
 
 	</body>
 
