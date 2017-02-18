@@ -38,9 +38,6 @@
 						</span>Sign Out
 			</a>
 		</div>
-		<div class="container">
-			<div class="grad"></div>
-
 			<div class="header">
 				<div>Build Your <br><span>Game</span></div>
 			</div>
@@ -83,7 +80,7 @@
 		</body>
 	<script src="js/jquery.js" defer="defer"></script>
 	<script src="js/jquery.datetimepicker.js" defer="defer"></script>
-	<script>
+	<script defer="defer">
 
 		$('#datetimepicker').datetimepicker({
 			dayOfWeekStart : 1,

@@ -16,14 +16,7 @@
 		<meta name="viewport" content="width=device-height, initial-scale=0.5"/>
 		<title>BALL MAJORS</title>
 		<link rel="stylesheet" type="text/css" href="css/mainStyleSheet.css" />
-		<style>
-			.header{
-			position: absolute;
-			top: calc(70% - 35px);
-			left: calc(50% - 255px);
-			z-index: 5;
-			}
-		</style>
+		
 	</head>
 	<body>
 		<div class="navBar">
@@ -47,8 +40,6 @@
 				?>
 			</span>Sign Out</a>
 		</div>
-		<div class="container">
-			<div class="grad"></div>
 			<div class="header">
 				<div>Directions to <br><span>Your Game </span></div>
 			</div>
@@ -57,7 +48,6 @@
 				  <a href="firstplace.php"> <input type="button" value="Tilles Park" /> </a>
 				  <a href="secondplace.php"> <input type="button" value="Conway Park" /> </a>
 				  <a href="thirdplace.php"> <input type="button" value="C4 Competitive Park" /> </a>
-
 			</div>
 
 	</body>
