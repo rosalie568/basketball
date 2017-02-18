@@ -1,5 +1,4 @@
 <?php
-
 	ini_set('max_execution_time', 20*60);
 	session_start();
 
@@ -27,7 +26,7 @@
 		<meta name="viewport" content="width=device-height, initial-scale=0.5"/>
 		<link rel="stylesheet" type="text/css" href="js/jquery.datetimepicker.css"/>
 		<link rel="stylesheet" type="text/css" href="css/mainStyleSheet.css" />
-		<script type="text/javascript">
+		<script type="text/javascript" defer="defer">
 			function delete_id(id)
 			{
 				 if(confirm('Are you sure you want to delete this game?'))
@@ -44,10 +43,9 @@
 				<li><a class="active" href="deleteGame.php">Delete Game</a></li>
 				<li><a href="MinMax.html">Change # of Players</a></li>
 			</ul>
+			<a href="logOut.php" class="button"><span>Admin </span>Sign Out</a>
 		</div>
 		<div class="container">
-		<a href="logOut.php" class="button"><span>Admin </span>Sign Out</a>
-			<div class="grad"></div>
 
 			<div class="header">
 				<div>Delete <br><span> A Game</span></div>

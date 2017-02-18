@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <?php
+	ini_set('max_execution_time', 20*60);
 	session_start();
 
 	include 'include.php';		//get values for database
@@ -42,6 +42,7 @@
 		header("Location: first.php");		//goes back to first.php page after player joins a game
 	}
 ?>
+<!DOCTYPE html>
 <html >
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -50,7 +51,7 @@
 		<link rel="stylesheet" type="text/css" href="js/jquery.datetimepicker.css"/>
 		<link rel="stylesheet" type="text/css" href="css/mainStyleSheet.css" />
 
-		<script type="text/javascript">
+		<script type="text/javascript" defer="defer">
 			function join_id(id)
 			{
 				 if(confirm('Are you sure you want to join this game?'))
@@ -62,29 +63,34 @@
 
 	</head>
 	<body>
+		<div class="navBar">
+			<ul>
+				<li><a href="first.php">Home</a></li>
+				<li><a href="setGame.php">Create a Game</a></li>
+				<li><a href="searchGame.php">Join a Game</a></li>
+				<li><a href="myGame.php">View My Game</a></li>
+				<li><a href="googlemap.php">Directions to Game</a></li>
+			</ul>
+			<a href="logOut.php" class="button"><span>
+				<?php
 
-		<div class="body"></div>
-		<div class="container">
-		<a href="logOut.php" class="button"><span>
-		<?php
-					$check = mysql_query("
-							SELECT *
-							FROM  student
-							WHERE email = '" . mysql_real_escape_string($_SESSION['email']) . "' ") ;
+					  $check = mysql_query("
+						  SELECT *
+						  FROM  student
+						  WHERE email = '" . mysql_real_escape_string($_SESSION['email']) . "' ") ;
 
-						$row2 = mysql_fetch_array($check);
+					  $row2 = mysql_fetch_array($check);
 
-						echo $row2['firstName'];?>
-						</span>Sign Out</a>
-
-			<div class="grad"></div>
-
+					  echo $row2['firstName'];
+				?>
+			</span>Sign Out </a>
+		</div>
 			<div class="header">
 				<div>Join A <br><span>Game</span></div>
 			</div>
 			<br>
 			<div class="login">
-<div class="t" >
+				<div class="t" >
 				<table border>
 					<tr>
 						<th><h2>Time </h2></th>
