@@ -20,10 +20,8 @@
 				<li><a href="myGame.php">View My Game</a></li>
 				<li><a href="googlemap.php">Directions to Game</a></li>
 			</ul>
-		</div>
-		<div class="container">
 			<a href="logOut.php" class="button"><span>
-				<?php
+				  <?php
 						include 'include.php';		//get values for database
 
 						$con = mysql_connect($dbhost, $dbuser, $dbpass);
@@ -38,8 +36,9 @@
 
 						echo $row2['firstName'];
 				?>
-						</span>Sign Out</a>
-
+			</span>Sign Out </a>
+		</div>
+		<div class="container">
 			<div class="grad"></div>
 
 			<div class="header">

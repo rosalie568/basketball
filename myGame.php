@@ -73,9 +73,9 @@
 
 						$row2 = mysql_fetch_array($check);
 
-						echo $row2['firstName'];?>
-						</span>Sign Out
-				</a>
+						echo $row2['firstName'];
+				?>
+			</span>Sign Out </a>
 		</div>
 		<div class="container">
 			<div class="grad"></div>
