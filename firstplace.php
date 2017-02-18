@@ -43,14 +43,14 @@
 
 					  $row2 = mysql_fetch_array($check);
 
-					  echo $row2['firstName'];?>
-					  </span>Sign Out
-			  </a>
+					  echo $row2['firstName'];
+				?>
+			</span>Sign Out </a>
 		</div>
-		<div class="container"> </div>
+		<div class="container">
 			<br><br><br><br>
 			<center><h1>Tilles Park</h1></center>
-			<div id="googleMap" style="width:50%;height:400px;"></div>
+			<div id="googleMap" style="width:50%; height:400px;"></div>
 
 			<div class="grad"></div>
 			<div class="header">

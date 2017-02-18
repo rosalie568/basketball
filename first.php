@@ -58,8 +58,7 @@
 
 						echo $row2['firstName'];
 					?>
-				</span>Sign Out
-			</a>
+			</span>Sign Out </a>
 		</div>
 			<div class="container">
 

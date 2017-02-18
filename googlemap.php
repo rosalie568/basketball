@@ -35,7 +35,7 @@
 				<li><a class="active" href="googlemap.php">Directions to Game</a></li>
 			</ul>
 			<a href="logOut.php" class="button"><span>
-			<?php
+				<?php
 					$check = mysql_query("
 							SELECT *
 							FROM  student
@@ -44,7 +44,7 @@
 						$row2 = mysql_fetch_array($check);
 
 						echo $row2['firstName'];
-			?>
+				?>
 			</span>Sign Out</a>
 		</div>
 		<div class="container">
