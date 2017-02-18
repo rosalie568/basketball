@@ -59,25 +59,25 @@
 				<li><a class="active" href="myGame.php">View My Game</a></li>
 				<li><a href="googlemap.php">Directions to Game</a></li>
 			</ul>
+			<a href="logOut.php" class="button"><span>
+				  <?php
+						include 'include.php';		//get values for database
+
+						$con = mysql_connect($dbhost, $dbuser, $dbpass);
+						mysql_select_db($dbname) or die( 'error connecting to database' );
+
+						$check = mysql_query("
+							SELECT *
+							FROM  student
+							WHERE email = '" . mysql_real_escape_string($_SESSION['email']) . "' ") ;
+
+						$row2 = mysql_fetch_array($check);
+
+						echo $row2['firstName'];?>
+						</span>Sign Out
+				</a>
 		</div>
 		<div class="container">
-			<a href="" class="button>"> Hi
-			</a>
-			<a href="logOut.php" class="button">
-				<span>
-						<?php
-
-							$check = mysql_query("
-								SELECT *
-								FROM  student
-								WHERE email = '" . mysql_real_escape_string($_SESSION['email']) . "' ") ;
-
-							$row2 = mysql_fetch_array($check);
-
-							echo $row2['firstName'];
-						?>
-					</span>Sign Out </a>
-				</div>
 			<div class="grad"></div>
 
 			<div class="header">
