@@ -37,8 +37,6 @@
 .header{
 		position: absolute;
 		top: 35%;
-		/*
-		left: calc(50% - 255px); */
 		left: 25%;
 		z-index: 2;
 }
@@ -58,7 +56,6 @@
 .login{
 		position: absolute;
 		top: 25%;
-		/*left: calc(50% - 50px); */
 		left: 40%;
 		height: 150px;
 		width: 350px;
@@ -242,7 +239,7 @@ option {
 
 span{
 	text-align: center;
-	padding-right: 5%;
+	padding-right: 10%;
 }
 
 .button span {
