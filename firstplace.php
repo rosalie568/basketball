@@ -24,17 +24,13 @@
 			<a href="logOut.php" class="button"><span>
 				<?php
 					  include 'include.php';		//get values for database
-
 					  $con = mysql_connect($dbhost, $dbuser, $dbpass);
 					  mysql_select_db($dbname) or die( 'error connecting to database' );
-
 					  $check = mysql_query("
 						  SELECT *
 						  FROM  student
 						  WHERE email = '" . mysql_real_escape_string($_SESSION['email']) . "' ") ;
-
 					  $row2 = mysql_fetch_array($check);
-
 					  echo $row2['firstName'];
 				?>
 			</span>Sign Out </a>
@@ -54,14 +50,11 @@
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			};
 			var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
-
 			var marker = new google.maps.Marker({
 		        position: myLatlng,
 		        map: map,
 	        	title:"Hello World!"
 	    	});
-
 		}
 	</script>
 
