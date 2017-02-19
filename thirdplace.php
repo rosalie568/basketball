@@ -42,7 +42,7 @@
 		<div class="container">
 			<br><br><br><br>
 			<center><h1>C4 Competitive Park</h1></center>
-			<div id="googleMap" style="width:50%;height:400px;"></div>
+			<div id="googleMap" style="width: 600px; height: 400px;"></div>
 		</div>
 
 	<script defer="defer">
