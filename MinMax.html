@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-height, initial-scale=0.5"/>
 		<title>BALL MAJORS</title>
 		<link rel="stylesheet" type="text/css" href="css/mainStyleSheet.css" />
-		<script type="text/javaScript" src="js/mainJavaScript.js"> </script>
+		<script type="text/javaScript" src="js/mainJavaScript.js" defer="defer"> </script>
 	</head>
 	<body>
 		<div class="navBar">
@@ -18,30 +18,26 @@
 		</div>
 		<div class="container">
 		<a href="logOut.php" class="button"><span>Admin</span>Sign Out</a></div>
-			<div class="grad"></div>
 			<div class="header">
 				<div>Admin <span>Power</span></div>
 			</div>
-
-
 			<div class="login">
 			<form action="numPlayers.php" method="post">
 
 					<table>
 						<tr>
-							<td> <h2> New Maximum Players: </h2> </td>
+							<td> <h2>New Minimum Players: </h2> </td>
 							<td>
-								<input type="text" placeholder="Max Players" name="Max" id="Max"><br>
+								<input type="text" placeholder="Min players" name="Min" id="Min" onchange="minCheck()"><br>
 							</td>
 						</tr>
 						<tr>
-							<td> <h2>New Minimum Players: </h2> </td>
+							<td> <h2> New Maximum Players: </h2> </td>
 							<td>
-								<input type="text" placeholder="Min players" name="Min" id="Min" ><br>
+								<input type="text" placeholder="Max Players" name="Max" id="Max" onchange="maxCheck()"><br>
 							</td>
 						</tr>
-						</td>
-						</tr>
+						<tr>
 							<td> </td>
 							<td> <button type="submit" value="submit" name="submit" id="register">submit</button>	</td>
 						</tr>
