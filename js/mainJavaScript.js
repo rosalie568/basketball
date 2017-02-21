@@ -39,21 +39,12 @@ function passwordcheck()
 	}
 }
 
-function minCheck()
-{
-	var x = document.getElementById("Min").value;
-	var y = document.getElementById("Max").value;
-	if( x <= 0 || isNaN(x) ) {
-		alert("Min value needs to be an interger greater than or equal to 0.");
-	}
-}
 
 function maxCheck()
 {
-	var x = document.getElementById("Min").value;
 	var y = document.getElementById("Max").value;
 	if(y <= 1 || isNaN(y) ) {
-		alert("Max value needs to be an interger greater than or equal to 1.");
+		alert("Max value needs to be an interger greater than or equal to 2.");
 	}
 
 }
