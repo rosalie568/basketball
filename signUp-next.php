@@ -39,9 +39,13 @@
 
 								//if email is in database go to invailidEmail page
 								if(!empty($row['email']) )
-								header("Location: invalidEmail.html");			//goes back to signUp page
+									header("Location: invalidEmail.html");			//goes back to signUp page
 								else
 								{
+									//encrpyt password
+									include 'encrpyt.php';
+
+									//$hashed_password is the hashed password
 
 									// insert values into database
 									$sql="INSERT INTO student (firstName, lastName, password, email, phoneNum)

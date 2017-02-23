@@ -1,6 +1,7 @@
 <?php
 
 	ini_set('max_execution_time', 20*60);
+	session_start();   //starting the session for user profile page
 
 	include 'include.php';		//get values for database
 
@@ -13,15 +14,18 @@
 
 	function SignIn()
 	{
-		session_start();   //starting the session for user profile page
+
 		if(!empty($_POST['email']) && !empty($_POST['password']) )   //checking the 'user' name which is from Sign-In.html, is it empty or have some text
 		{
+			//encrpyt password page
+			include 'encrpyt.php';
+
 			$query = mysql_query("SELECT *  FROM student where email = '$_POST[email]' AND password = '$_POST[password]'") ;
 			$row = mysql_fetch_array($query);
 
 			if(!empty($row['email']) AND !empty($row['password']))
 			{
-				//$session_register("email");//Deprecated
+
 				$_SESSION['email']= $_POST['email'];
 
 				//check if status is a student
